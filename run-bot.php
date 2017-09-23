@@ -19,5 +19,5 @@ $count = isset($matches[1]) ? (int)$matches[1] : 0;
 
 if($count) {
 	$client = new Maknz\Slack\Client(WEBHOOK, $settings);
-	$client->send('Hallå där! Totalt antal registrerade besökare är: ' . $count);
+	$client->send('Hallå där! Totalt antal registrerade deltagare är: ' . $count);
 }
